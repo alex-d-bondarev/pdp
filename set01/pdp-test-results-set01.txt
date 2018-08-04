@@ -1,0 +1,101 @@
+PDP Test Report for set01
+
+
+Test Name: warmup-tests
+Definitions:
+
+Test Case: 
+  (test-true
+   "The first character of string 'DrRacket' should be 'D'"
+   (let ((c (string-first "DrRacket")))
+     (or (and (char? c) (char=? c #\D)) (string=? c "D"))))
+Test Result: Error
+pdp-require: string-first not provided
+
+Test Case: 
+  (test-equal?
+   "a rectangle image with width 3 length 5 should have area 15 "
+   (image-area (rectangle 3 5 "solid" "yellow"))
+   15)
+Test Result: Error
+pdp-require: image-area not provided
+
+Test Case: 
+  (test-equal?
+   "the image of circle with radios 2 should have area 16"
+   (image-area (circle 2 "solid" "yellow"))
+   16)
+Test Result: Error
+pdp-require: image-area not provided
+
+Test Case: 
+  (test-equal?
+   "insert to the front of a non-empty string"
+   (string-insert "Racket" 0)
+   "_Racket")
+Test Result: Error
+pdp-require: string-insert not provided
+
+Test Case: 
+  (test-equal?
+   "insert to the middle of a non-empty string"
+   (string-insert "Racket" 2)
+   "Ra_cket")
+Test Result: Error
+pdp-require: string-insert not provided
+
+Test Case: 
+  (test-equal?
+   "insert to the last of a non-empty string"
+   (string-insert "Racket" 6)
+   "Racket_")
+Test Result: Error
+pdp-require: string-insert not provided
+
+Test Case: 
+  (test-equal? "insert to an empty string" (string-insert "" 0) "_")
+Test Result: Error
+pdp-require: string-insert not provided
+
+Test Case: 
+  (test-equal?
+   "delete the first position from string"
+   (string-delete "Racket" 0)
+   "acket")
+Test Result: Error
+pdp-require: string-delete not provided
+
+Test Case: 
+  (test-equal?
+   "delete the middle position from string"
+   (string-delete "Racket" 2)
+   "Raket")
+Test Result: Error
+pdp-require: string-delete not provided
+
+Test Case: 
+  (test-equal?
+   "delete the last position from string"
+   (string-delete "Racket" 5)
+   "Racke")
+Test Result: Error
+pdp-require: string-delete not provided
+
+
+Results for Suite warmup-tests:
+  Test Successes: 0
+  Test Failures: 0
+  Test Errors: 10
+
+Raw Score: 0/10
+Normalized Score: 0/10
+
+
+Overall Results:
+  Test Successes: 0
+  Test Failures: 0
+  Test Errors: 10
+
+Raw Score: 0/10
+Normalized Score: 0/10
+

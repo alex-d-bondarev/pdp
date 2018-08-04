@@ -1,0 +1,17 @@
+CCIS ID: bondarevo
+
+Reviewer 1: Shailesh
+Reviewer 2: Ankur
+
+Correctness: 15/15
+Design: AB
+Presentation: A
+
+Notes:
+
+- Rectangle definition - does not have data type for pen-down? Also interpretation for the fields should be capture all the invariants
+- ListOfDots - template has incorrect function call - should be dot-fn
+- Interpretation for LOD in world definition should specify dots for all rects
+- rect-after-tick/rect-after-key-event functions should use template on rectangle
+- set-rect-x/y functions should only take x and y rectangle coordinates and velocities to simplify design
+- rect-pen-down/up = could have combined in a single function
